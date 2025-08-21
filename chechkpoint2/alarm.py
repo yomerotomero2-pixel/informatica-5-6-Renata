@@ -1,3 +1,4 @@
+
 def main():
     is_armed = False
     motion_detected = False
