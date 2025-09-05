@@ -13,7 +13,7 @@ def encode_message(text):                                      #This executes th
     while i < len(text):                                          #Now we start the loop while the index is less than text, the message we ask the user 
         char = text[i]                                          #we want the variable char to keep the letter of the text and start in the position of the alphabet 0
 
-        if char in alphabet:
+        if char in alphabet:                                        #
             cipher_index = alphabet.find(char)
             new_message += cipher[cipher_index]
         else:
