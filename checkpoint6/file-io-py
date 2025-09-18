@@ -10,8 +10,18 @@
 #     print(f"Hello {name}")                          
 
 
-name = input("What's your name? ")
-file = open("names.txt","a")                                      #a is to append and dont erase the content in the file
-#file = open("names.txt","w")                                #open is a function and it expects to open a file  open this file because i'm going to write on it, thats what w means:write
-file.write(f"{name}\n")
-file.close()
+# name = input("What's your name? ")
+# file = open("names.txt","a")                                      #a is to append and dont erase the content in the file
+# file = open("names.txt","w")                                #open is a function and it expects to open a file  open this file because i'm going to write on it, thats what w means:write
+# file.write(f"{name}\n")
+# file.close()
+
+#with open("names.txt", "a") as file:                                #with is a way to not add the close, 
+    #file.write(f"{input("What's your name? ")}")
+
+with open("names.txt","r") as file:
+    lines = file.readlines()                #readline is going to read every line of the document and its going to create a list
+
+for line in sorted(lines):                                    #then here is going to write hello with every element that readlines read in the file
+    print(f"Hello {line.rstrip()}")            #rstrip is for remove every space after 
+
