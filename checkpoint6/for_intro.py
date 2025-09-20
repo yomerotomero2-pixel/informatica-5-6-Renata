@@ -10,3 +10,4 @@ for principle in doctrine:
 
 school_objective = ["Deepen conversion to Jesus Christ and His restored Gospel", "Qualify for the blesings of the Temple", "Prepare for missionary and Church service", "Build the kingdom of God" ]
 
+name = ("Renata")
