@@ -19,7 +19,7 @@ for i in dictionary.items():
     print(i)
 
 #Print key and value using methods
-#to do
+# to do
 
 
 
