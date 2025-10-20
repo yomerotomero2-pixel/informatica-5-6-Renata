@@ -14,7 +14,8 @@ def assign_letters():
     for item in letters:
         print(item, end=", ")
     print()
-    for attepmt in letters:
+    for attempt in letters:
        guess1 = input("Type your word (blank to finish the game): ")
+       points = attempt
        
 main()
