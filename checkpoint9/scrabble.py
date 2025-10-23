@@ -13,8 +13,8 @@ letter_values = {
 turn_letters = []
 points = 0
 
-for random_letter in range(13):
-    random_index = random.randint(0, len(letter_values) - 1)
+for random_letter in range(13):                                                             #this first loop is to make the random letters and then set the 
+    random_index = random.randint(0, len(letter_values) - 1)                                  #
     letter_list = list(letter_values.keys())
     new_letter = letter_list[random_index]
     turn_letters.append(new_letter)
