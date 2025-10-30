@@ -3,13 +3,14 @@ def main():
   print("You typed in:", number)
 
 def read_input(prompt,small,large): # Inserting parameters
-    try:
+    while True:
+      try:
         x = int(input(prompt))
         if 5 < x < 10:
-           return x
+           return x                    #this stop the loop (return)
         else:
            print("Please type a number BETWEEN",small,"and",large) # this is when the numbers the user type are not between 5 and 10
-    except ValueError:
+      except ValueError:
        print("Please type a NUMBER between",small, "and",large) # , sings are for concatanate the numbers
 
   
