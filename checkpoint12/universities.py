@@ -12,7 +12,8 @@ def main():
            uni = input("Not found, please try again: ")
 
 import requests
-
+api = requests.get("http://universities.hipolabs.com/search?name=middle&country=turkey")
+print(api)
            
                  
           
