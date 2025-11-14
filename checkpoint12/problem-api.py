@@ -1,5 +1,5 @@
 import requests
-print("Welcome to our makeup API, we are going to help you find the perfect makeup for you!!!")
+print("Welcome to our makeup API, we are going to help you find the perfect makeup for you from the brand Mabelling!!!")
 skin_tones = [
     "Type I: Light,pale white", 
     "Type II: White, fair",
@@ -17,5 +17,8 @@ product = [
     "lipstick",
     "eyeliner",
     "mascara",
-    "lip_liner"
+    "lip_liner",
+    "bronzer",
+    "blush",
+    "foundation"
 ]
