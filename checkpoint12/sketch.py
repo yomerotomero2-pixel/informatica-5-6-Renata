@@ -1,17 +1,18 @@
 import requests
-print("Welcome to our makeup API, we are going to help you find the perfect makeup for you from the brand Mabelling!!!")
-skin_tones = [
-    "1: Light,pale white", 
-    "2: White, fair",
-    "3: Medium, white to olive",
-    "4: Olive, moderate brown",
-    "5: Brown, dark brown",
-    "6: Brown, very dark, brown to black"
-]
-clean_list = "\n".join(skin_tones)
-print(f"Skin tones:{clean_list}")
+
+print("Welcome to our makeup API, we are going to help you find the perfect makeup for you from the brand Maybelline!!!")
+skin_tones = {
+    "1" : "Light,pale white", 
+    "2" : "White, fair",
+    "3" : "Medium, white to olive",
+    "4" : "Olive, moderate brown",
+    "5" : "Brown, dark brown",
+    "6" : "Brown, very dark, brown to black"
+}
+print("\nSkin tone options:")
 for key in skin_tones:
     print(f"{key}. {skin_tones[key]}")
+
 
 user_tone = input("\nSelect your skin tone number: ")
 print(f"\nSelected tone: {skin_tones[user_tone]}\n")
@@ -19,13 +20,15 @@ print(f"\nSelected tone: {skin_tones[user_tone]}\n")
 product = [
     "eyeshadow",
     "lipstick",
-    "eyeliner",
-    "mascara",
     "lip_liner",
-    "bronzer",
     "blush",
     "foundation"
 ]
+
+print("Available products:")
+for p in product:
+    print(f"- {p}")
+
 product_choice = input("\nEnter the product you want: ").lower()
 
 
